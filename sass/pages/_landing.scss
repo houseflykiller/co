@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box {
+    background-color: #fff;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    
+        &--item {
+            margin: 0 1.5rem 3rem 1rem;
+            flex-grow: 1;
+             
+            &__image-box {
+                height: 25rem;
+                background-color: darkolivegreen;
+                
+            }
+    
+            &__text-box {
+    
+            }
+        }
+    }
+
+}
+
+
+.join-us {
+    display: flex;
+    flex-direction: column;
+    padding: .1rem;
+    border-left: 1px solid #847577;
+}

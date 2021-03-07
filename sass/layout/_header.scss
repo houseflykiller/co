@@ -1,0 +1,79 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #ffba08;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    border-bottom: 10px solid #ad1b02;
+}
+
+
+.header-navigation {
+    padding-top: .6rem;
+
+    &__top {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        color: #e5e6e4;       
+
+        &--item {
+            display: inline-block;
+            margin: 0 1rem;
+
+            & a:link, & a:visited {
+                text-decoration: none;
+                color: #fbfbf2;
+            }
+            & a:hover, & a:active {
+                text-decoration: none;
+                color: #e5e6e4;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__bottom {
+        list-style: none;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        color: #fbfbf2;
+        
+
+        &--item {
+            display: inline-block;
+            margin: 0 3rem;
+            font-weight: 600;
+
+            & a:link, & a:visited {
+                text-decoration: none;
+                color: #fbfbf2;
+            }
+            & a:hover, & a:active {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.flow {
+    
+    &__image {
+    background-image: url(../../img/fhs/buildconnectionslarge-10330.jpg);
+    background-color: #847577;
+    height: 45rem;
+    }
+
+    &__text {
+        background-color: #ffba08;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 1rem;
+    }
+}

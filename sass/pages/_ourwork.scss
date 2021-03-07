@@ -1,0 +1,40 @@
+.wide-header-box {
+    display: flex;
+    height: 45rem;
+
+    &__text {
+        flex: 0 1 50%;
+        background-color:gold;
+    }
+
+    &__image {
+
+    }
+
+}
+
+
+.flex-container {
+        display: flex;
+        justify-content: space-between;
+        height: 25rem;
+        margin-bottom: 2rem;
+        background-color: dodgerblue;
+
+
+        &--item {
+            flex: 0 1 48%;
+            margin: 2rem;
+
+            &__image-box {
+                height: 20rem;
+                background-color:rosybrown;
+            }
+
+            &__text-box {
+                text-align: center;                                                                                                                                                                                                                                                                                                                                                ;
+                
+            }
+            
+        }
+    }
