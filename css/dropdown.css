@@ -9,7 +9,7 @@
         position: absolute;
         background-color: #fbfbf2;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1; }
+        z-index: 20; }
         .dropdown-content a {
             display: block;
             padding: 1rem 2rem 1rem 0; }
@@ -19,6 +19,7 @@
             color: #fbfbf2;
             background-color: #ffba08; }
 
+/* This is the main trick to memorize */
 /* Set the hidden <div> to display:block when its parent <li> is hovered */
 .header-navigation__bottom--item:hover .dropdown-content {
     display: block; }

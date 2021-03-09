@@ -34,14 +34,16 @@ body {
   margin: 1rem; }
 
 .header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky; /* need to see complete slideshow; "fixed" was covering the div.flow */
   left: 0;
   top: 0;
   width: 100%;
   background-color: #ffba08;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */ /* this is creating an unwanted white space atop the flow */
+  z-index: 10; /* keeps the header above the slideshow on the z-axis */
   border-bottom: 10px solid #ad1b02; }
 
 .header-navigation {
@@ -78,10 +80,15 @@ body {
       .header-navigation__bottom--item a:hover, .header-navigation__bottom--item a:active {
         text-decoration: none; }
 
-.flow__image {
-  background-image: url(../../img/fhs/buildconnectionslarge-10330.jpg);
-  background-color: #847577;
-  height: 45rem; }
+.flow {
+  position: relative;
+  height: 45rem;
+  width: 100%;
+  overflow: hidden; }
+
+.flow__images {
+  /* background-image: url(../img/fhs/buildconnectionslarge-10330.jpg); */
+  background-color: #847577; }
 
 .flow__text {
   background-color: #ffba08;

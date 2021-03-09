@@ -1,0 +1,41 @@
+.flow__images {
+    position: relative;
+    left: 0%;
+    width: 500%;
+    height: 100%; }
+    .flow__images--image {
+        float: left;
+        width: 20%;
+        height: 100%;
+        object-fit: cover; }
+
+/* Sliding animation */
+.slide-left {
+    -webkit-animation-name: slide-left;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: slide-left;
+    animation-duration: 40s;
+    animation-iteration-count: infinite; }
+    @-webkit-keyframes slide-left {
+        0% { left: 0%; }
+        12.5% { left: -100%; }
+        25% { left: -100%; }
+        37.5% { left: -200%; }
+        50% { left: -200%; }
+        62.5% { left: -300%; }
+        75% { left: -300%; }
+        87.5% { left: -400%; }
+        100% { left: -400%; }
+    }
+    @keyframes slide-left {
+        0% { left: 0%; }
+        12.5% { left: -100%; }
+        25% { left: -100%; }
+        37.5% { left: -200%; }
+        50% { left: -200%; }
+        62.5% { left: -300%; }
+        75% { left: -300%; }
+        87.5% { left: -400%; }
+        100% { left: -400%; }
+    }
