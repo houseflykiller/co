@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #a6a2a2; }
+
+#usa-flag {
+  width: 2.2rem;
+  height: 2.2rem; }
+
+.logo-box {
+  font-style: oblique;
+  color: #fbfbf2;
+  font-weight: 800;
+  line-height: 2;
+  font-size: 4rem;
+  margin-left: 1.5rem; }
+
+.gh-1 {
+  color: #ffba08;
+  border-bottom: 3px solid #ad1b02;
+  margin: 1rem; }
+
+.gh-leading {
+  font-size: 3rem; }
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  /* need to see complete slideshow; "fixed" was covering the div.flow */
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffba08;
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 4rem; */
+  /* this is creating an unwanted white space atop the flow */
+  z-index: 10;
+  /* keeps the header above the slideshow on the z-axis */
+  border-bottom: 10px solid #ad1b02; }
+
+.header-navigation {
+  padding-top: .6rem; }
+  .header-navigation__top {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    color: #e5e6e4; }
+    .header-navigation__top--item {
+      display: inline-block;
+      margin: 0 1rem; }
+      .header-navigation__top--item a:link, .header-navigation__top--item a:visited {
+        text-decoration: none;
+        color: #fbfbf2; }
+      .header-navigation__top--item a:hover, .header-navigation__top--item a:active {
+        text-decoration: none;
+        color: #e5e6e4;
+        font-size: 1.3rem; }
+  .header-navigation__bottom {
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    color: #fbfbf2; }
+    .header-navigation__bottom--item {
+      display: inline-block;
+      margin: 0 3rem;
+      font-weight: 600; }
+      .header-navigation__bottom--item a:link, .header-navigation__bottom--item a:visited {
+        text-decoration: none;
+        color: #fbfbf2; }
+      .header-navigation__bottom--item a:hover, .header-navigation__bottom--item a:active {
+        text-decoration: none; }
+
+.dropdown-content {
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  background-color: #e5e6e4;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 20; }
+  .dropdown-content a {
+    border-radius: 1px;
+    display: block;
+    padding: 1rem 2rem; }
+    .dropdown-content a:link, .dropdown-content a:visited {
+      color: #ffba08; }
+    .dropdown-content a:hover, .dropdown-content a:active {
+      color: #fbfbf2;
+      background-color: #ffba08; }
+
+.header-navigation__bottom--item:hover .dropdown-content {
+  display: block; }
+
+.footer {
+  margin-top: 4rem; }
+  .footer__nav {
+    list-style: none; }
+    .footer__nav--item {
+      display: inline-block; }
+      .footer__nav--item a:link, .footer__nav--item a:visited {
+        text-decoration: none;
+        color: #777; }
+
+.main {
+  display: flex;
+  justify-content: space-between; }
+
+.section-info {
+  display: flex;
+  flex-direction: column; }
+
+.info-box {
+  background-color: #fff; }
+  .info-box__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .info-box__list--item {
+      margin: 0 1.5rem 3rem 1rem;
+      flex-grow: 1; }
+      .info-box__list--item__image-box {
+        height: 25rem;
+        background-color: darkolivegreen; }
+
+.join-us {
+  display: flex;
+  flex-direction: column;
+  padding: .1rem;
+  border-left: 1px solid #847577; }
+
+.flow__images {
+  position: relative;
+  left: 0%;
+  width: 500%;
+  height: 60vh; }
+  .flow__images--image {
+    float: left;
+    width: 20%;
+    height: 100%;
+    object-fit: cover; }
+
+.flow__text {
+  background-color: #ffba08;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 1rem;
+  float: left;
+  position: absolute;
+  bottom: 0px;
+  width: 20%;
+  z-index: 7; }
+
+/* Sliding animation */
+.slide-left {
+  -webkit-animation-name: slide-left;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: slide-left;
+  animation-duration: 40s;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    left: 0%; }
+  12.5% {
+    left: -100%; }
+  25% {
+    left: -100%; }
+  37.5% {
+    left: -200%; }
+  50% {
+    left: -200%; }
+  62.5% {
+    left: -300%; }
+  75% {
+    left: -300%; }
+  87.5% {
+    left: -400%; }
+  100% {
+    left: -400%; } }
+
+@keyframes slide-left {
+  0% {
+    left: 0%; }
+  12.5% {
+    left: -100%; }
+  25% {
+    left: -100%; }
+  37.5% {
+    left: -200%; }
+  50% {
+    left: -200%; }
+  62.5% {
+    left: -300%; }
+  75% {
+    left: -300%; }
+  87.5% {
+    left: -400%; }
+  100% {
+    left: -400%; } }
+
+.wide-header-box {
+  display: flex;
+  height: 45rem; }
+  .wide-header-box__text {
+    flex: 0 1 50%;
+    background-color: gold; }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 25rem;
+  margin-bottom: 2rem;
+  background-color: dodgerblue; }
+  .flex-container--item {
+    flex: 0 1 48%;
+    margin: 2rem; }
+    .flex-container--item__image-box {
+      height: 20rem;
+      background-color: rosybrown; }
+    .flex-container--item__text-box {
+      text-align: center; }
